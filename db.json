@@ -1,0 +1,58 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Cannot connect to Wi-Fi",
+      "description": "I am unable to connect to the Wi-Fi network at my office. It was working fine yesterday, but today I keep getting an authentication error. I've tried restarting the router and my device, but the issue persists. This problem is impacting my ability to work remotely and collaborate with my team. I rely on a stable internet connection to attend virtual meetings, access important documents on the cloud, and communicate with colleagues. It's frustrating not being able to troubleshoot this problem on my own, as I need the expertise of the IT support team to resolve this issue. I hope this ticket can be addressed promptly, as it's hindering my productivity and affecting my overall work performance.",
+      "isOpen": true
+    },
+    {
+      "id": 2,
+      "title": "Printer not working",
+      "description": "The printer in the IT department is not printing anything. I've checked the connections and tried restarting it, but it's still not responding. The printer shows an error message 'Paper jam,' but there is no paper jammed. This printer is crucial for daily operations, and without it, we are unable to print essential documents such as reports, invoices, and client proposals. As a result, our workflow has been severely disrupted, and we're unable to meet deadlines. We need immediate assistance to get the printer back online and functioning properly. Our team has already tried basic troubleshooting, but we are unable to identify the root cause of the issue. Please treat this ticket as urgent, and any help in resolving this problem would be greatly appreciated.",
+      "isOpen": true
+    },
+    {
+      "id": 3,
+      "title": "Email synchronization issue",
+      "description": "My email is not syncing properly on my phone. I receive emails on my computer, but they don't show up on my phone, even after several attempts to refresh. This issue started happening after the latest app update. I rely heavily on accessing emails on the go, and the lack of synchronization is causing me to miss important messages and updates from colleagues and clients. As a professional working in a fast-paced environment, seamless communication is crucial, and this problem is hindering my ability to stay connected. I've checked my internet connection and tried restarting the phone, but the problem persists. I would appreciate immediate assistance to resolve this issue as it's impacting my productivity and causing unnecessary stress.",
+      "isOpen": true
+    },
+    {
+      "id": 4,
+      "title": "Software installation problem",
+      "description": "I'm trying to install a software update on my computer, but the installation keeps failing with an error message 'Installation aborted.' I've checked my system requirements, and there's enough disk space available. This software update contains critical security patches and new features that are essential for my work tasks. It's crucial that I have the latest version installed to ensure the safety of sensitive data and to take advantage of the software's enhanced functionalities. I've attempted the installation multiple times, and each time, it fails. I'm concerned that there might be an underlying issue causing this problem. I would appreciate the IT team's expertise in diagnosing and resolving this matter. Time is of the essence, and I hope this ticket can be addressed promptly.",
+      "isOpen": true
+    },
+    {
+      "id": 5,
+      "title": "Website not loading",
+      "description": "I can't access the company's website from my home computer. Other websites are working fine, but this one seems to be stuck on a loading screen. I've tried using a different browser, but the issue persists. As a remote employee, access to the company's website is vital for accessing internal resources, company news, and updates. Without it, I'm unable to stay updated on important announcements and access essential documents. I need to complete certain tasks that require information from the website, and this problem is causing significant delays in my work. It's frustrating not being able to pinpoint the cause of the issue on my end, and I'm hoping the IT support team can assist in resolving this matter as quickly as possible.",
+      "isOpen": true
+    },
+    {
+      "id": 6,
+      "title": "Account login issue",
+      "description": "I'm unable to log in to my account on the company portal. It keeps saying 'Invalid credentials,' but I'm sure I'm entering the correct username and password. I've tried resetting my password, but it didn't solve the problem. This account is vital for accessing company resources, submitting work reports, and collaborating with colleagues. I'm currently unable to carry out these tasks, which is affecting my productivity and work efficiency. I've tried accessing the account from different devices and browsers, but the login issue persists. I'm concerned that there might be a security issue or a problem with the account settings. I need assistance from the IT team to resolve this matter and regain access to my account.",
+      "isOpen": true
+    },
+    {
+      "id": 7,
+      "title": "Monitor displaying black screen",
+      "description": "My monitor suddenly went blank, and it's displaying a black screen. I've checked the connections, but it's still not working. The monitor's power indicator is on, but there's no display. This monitor is essential for my work tasks, and without it, I'm unable to complete my work efficiently. I rely on a dual-monitor setup to multitask and access multiple applications simultaneously. The lack of a working monitor is hindering my productivity and causing delays in meeting deadlines. I need urgent assistance to diagnose and resolve the issue with the monitor. I hope this matter can be addressed promptly as it's impacting my ability to work effectively.",
+      "isOpen": true
+    },
+    {
+      "id": 8,
+      "title": "Slow internet speed",
+      "description": "The internet speed in my office has been extremely slow for the past few days. It's affecting my work and productivity. I've run a speed test, and the results show much lower speeds than expected. This slow internet connection is causing delays in accessing cloud-based applications, collaborating with colleagues, and conducting video conferences. As a professional working in a technology-driven environment, a stable and fast internet connection is vital for seamless work operations. I've tried restarting the router and modem, but the issue persists. I'm concerned that there might be an underlying network issue that requires professional assistance to resolve. I would appreciate the IT team's expertise in diagnosing and resolving this matter as soon as possible.",
+      "isOpen": true
+    },
+    {
+      "id": 9,
+      "title": "Audio not working on laptop",
+      "description": "The audio on my laptop has stopped working. I've tried adjusting the volume and restarting the laptop, but there's still no sound. This issue occurred after a recent Windows update. Audio functionality is crucial for my work, as I rely on it for virtual meetings, webinars, and multimedia presentations."
+    }
+  
+  ]
+}

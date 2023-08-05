@@ -1,0 +1,13 @@
+<app-card>
+    <form class="form" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" [(ngModel)]="title">
+        </div>
+        <div class="input-group">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="10" [(ngModel)]="description"></textarea>
+        </div>
+        <app-button btnLabel="Submit"></app-button>
+    </form>
+</app-card>
