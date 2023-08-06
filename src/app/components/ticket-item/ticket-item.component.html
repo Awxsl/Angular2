@@ -1,6 +1,6 @@
 <div class="ticketItemCard">
     <app-card>
-        <div class="ticketItem">
+        <div class="ticketItem" [ngClass]="ticket.isOpen ? 'leftBorderRed' : 'leftBorderGreen' ">
             <a  [routerLink]="['./', ticket.id]">
                 <p class="ticketTitle">{{ ticket.title }}</p>
             </a>

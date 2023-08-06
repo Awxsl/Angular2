@@ -21,6 +21,18 @@
     margin-bottom: 1rem;
 }
 
+.leftBorderRed, .leftBorderGreen {
+    padding-left: 1rem;
+}
+
+.leftBorderRed {
+    border-left: 3px solid red;
+}
+
+.leftBorderGreen {
+    border-left: 3px solid green;
+}
+
 a {
     color: inherit;
     text-decoration: none;
