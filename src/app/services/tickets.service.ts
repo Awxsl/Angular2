@@ -22,6 +22,10 @@ export class TicketsService {
     return this.http.get<Ticket[]>(this.apiUrl)
   }
 
+  getTicket(id: number): Observable<Ticket> {
+    return this.http.get<Ticket>(`${this.apiUrl}/${id}`)
+  }
+
   addTicket(ticket: Ticket) {
     this.http.post(this.apiUrl, ticket, headerOptions).subscribe(() => console.log('added'))
   }

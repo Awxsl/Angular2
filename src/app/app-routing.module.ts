@@ -4,16 +4,12 @@ import { NavigationCardComponent } from './components/navigation-card/navigation
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { CreateTicketComponent } from './components/create-ticket/create-ticket.component';
 import { ButtonComponent } from './components/button/button.component';
+import { TicketExpandedComponent } from './components/ticket-expanded/ticket-expanded.component';
 
 const routes: Routes = [
   {path: '', component: NavigationCardComponent},
-  {path: 'tickets', component: TicketsComponent, children: [
-    {
-      path: ':id', 
-      component: CreateTicketComponent
-    }
-  ]},
-  {path: 'ticket/:ticketid', component: ButtonComponent},
+  {path: 'tickets', component: TicketsComponent},
+  {path: 'tickets/:ticketid', component: TicketExpandedComponent},
   {path: 'create-ticket', component: CreateTicketComponent},
 ];
 

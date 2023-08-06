@@ -1,7 +1,7 @@
 <div class="cardd">
     <app-card>
         <div class="ticketItem">
-            <a [routerLink]="[ticket.id]">
+            <a  [routerLink]="['./', ticket.id]">
                 <p class="ticketTitle">{{ ticket.title }}</p>
             </a>
             <p class="ticketDescription">{{ ticket.description.substring(0, 200) + '...' }}</p>
