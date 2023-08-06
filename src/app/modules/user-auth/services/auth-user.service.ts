@@ -15,7 +15,7 @@ export class AuthUserService {
     try {
       const result = await this.http.get<User>(`${this.apiUrl}/${user.id}`).toPromise().then(data => data.password === user.password)
       if(result) {
-        localStorage.setItem('username', user.password)
+        localStorage.setItem('username', user.id)
         this.router.navigate(['../dashboard'])
       }
       return true

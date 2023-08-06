@@ -8,7 +8,11 @@
 }
 
 .navItem {
-    
+    margin: 0 10px;
+}
+
+.navbarItemGroup {
+    display: flex;
 }
 
 a {

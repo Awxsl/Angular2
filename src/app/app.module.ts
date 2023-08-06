@@ -17,6 +17,7 @@ import { TicketExpandedComponent } from './components/ticket-expanded/ticket-exp
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { UserAuthModule } from './modules/user-auth/user-auth.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     TicketsComponent,
     TicketItemComponent,
     TicketExpandedComponent, 
-    LoginFormComponent, NavbarComponent
+    LoginFormComponent, NavbarComponent, ProfileComponent
   ],
   imports: [
     BrowserModule,

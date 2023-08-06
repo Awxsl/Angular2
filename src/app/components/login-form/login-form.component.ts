@@ -15,6 +15,7 @@ export class LoginFormComponent implements OnInit {
   constructor(private authUser:AuthUserService) { }
 
   ngOnInit(): void {
+    localStorage.clear()
   }
 
   onSubmit() {
