@@ -18,7 +18,7 @@ export class TicketsService {
 
   constructor(private http:HttpClient) { }
 
-  getTasks(): Observable<Ticket[]> {
+  getTickets(): Observable<Ticket[]> {
     return this.http.get<Ticket[]>(this.apiUrl)
   }
 

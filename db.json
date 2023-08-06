@@ -54,5 +54,23 @@
       "description": "The audio on my laptop has stopped working. I've tried adjusting the volume and restarting the laptop, but there's still no sound. This issue occurred after a recent Windows update. Audio functionality is crucial for my work, as I rely on it for virtual meetings, webinars, and multimedia presentations."
     }
   
-  ]
+  ],
+    "Users": [
+        {
+           "id": "abdullah",
+           "password": "123456",
+           "description": "I like reading and playing football"
+         },
+         {
+            "id": "mohammed",
+            "password": "123456",
+            "description": "I like reading and playing football"
+         },
+         {
+            "id": "sultan",
+            "password": "123456",
+            "description": "I like reading and playing football"
+        }
+    ]
+
 }

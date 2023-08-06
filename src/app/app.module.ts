@@ -14,6 +14,8 @@ import { CreateTicketComponent } from './components/create-ticket/create-ticket.
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { TicketItemComponent } from './components/ticket-item/ticket-item.component';
 import { TicketExpandedComponent } from './components/ticket-expanded/ticket-expanded.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { UserAuthModule } from './modules/user-auth/user-auth.module';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { TicketExpandedComponent } from './components/ticket-expanded/ticket-exp
     CreateTicketComponent,
     TicketsComponent,
     TicketItemComponent,
-    TicketExpandedComponent
+    TicketExpandedComponent, 
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule, 
+    UserAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

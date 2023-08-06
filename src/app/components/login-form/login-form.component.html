@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="inputGroup">
+        <label for="username" class="inputLabel">Username</label>
+        <input type="text" class="inputField" name="username" placeholder="Example..." [(ngModel)]="username">
+    </div>
+    <div class="inputGroup">
+        <label for="password" class="inputLabel">Password</label>
+        <input type="password" class="inputField" name="password" placeholder="********" [(ngModel)]="password">
+    </div>
+    <app-button label="Login" (onButtonClick)="onSubmit()"></app-button>
+</form>

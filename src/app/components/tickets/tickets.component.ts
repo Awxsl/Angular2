@@ -13,7 +13,7 @@ export class TicketsComponent implements OnInit {
   constructor(private ticketService:TicketsService) { }
 
   ngOnInit(): void {
-    this.ticketService.getTasks().subscribe((tasks) => this.tickets = tasks)
+    this.ticketService.getTickets().subscribe((tasks) => this.tickets = tasks)
   }
 
 

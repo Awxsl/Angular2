@@ -2,15 +2,17 @@
   <div class="navCard">
     <h2>Tickets</h2>
     <div class="btnDiv">
-      <app-button btnLabel="FAQs" (onButtonClick)="onFAQ()"></app-button>
-      <a routerLink="tickets">
+      <a routerLink="../profile">
+        <app-button btnLabel="Profile" (onButtonClick)="onFAQ()"></app-button>
+      </a>
+      <a routerLink="../tickets">
         <app-button
           btnLabel="View Tickets"
           (onButtonClick)="onViewTickets()"
         ></app-button>
       </a>
     </div>
-    <a routerLink="create-ticket" class="button">
+    <a routerLink="../create-ticket" class="button">
       <app-button
         class="button"
         btnLabel="Create New Ticket"
