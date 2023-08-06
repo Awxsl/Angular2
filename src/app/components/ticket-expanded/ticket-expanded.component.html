@@ -1,4 +1,12 @@
 <app-card>
-    <h1>{{ ticketInfo.title }}</h1>
-    <p>{{ticketInfo.description}}</p>
+  <h1>{{ ticketInfo.title }}</h1>
+  <p>{{ ticketInfo.description }}</p>
+  <div class="">
+    <span>Status:</span>
+    <span
+      class="status"
+      [ngStyle]="{ color: ticketInfo.isOpen ? 'red' : 'green' }"
+      >{{ ticketInfo.isOpen ? "Open" : "Closed" }}</span
+    >
+  </div>
 </app-card>
