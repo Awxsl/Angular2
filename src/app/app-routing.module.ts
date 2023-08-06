@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'tickets', component: TicketsComponent},
   {path: 'tickets/:ticketid', component: TicketExpandedComponent},
   {path: 'create-ticket', component: CreateTicketComponent},
+  {path: '**', redirectTo: 'login'},
 ];
 
 
