@@ -1,6 +1,6 @@
 <div class="profilePage">
   <app-card>
-    <ng-template [ngIf]="editMode" [ngIfElse]="Edit">
+    <ng-template [ngIf]="!editMode" [ngIfElse]="Edit">
         <div class="profileCardHeader">
           <h3 class="username">Abdullah</h3>
           <p class="editButton" (click)="onToggleEdit()">Edit</p>

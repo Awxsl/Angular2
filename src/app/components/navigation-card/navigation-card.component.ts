@@ -10,7 +10,6 @@ export class NavigationCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(localStorage.getItem('username'));
   }
 
   onFAQ() {

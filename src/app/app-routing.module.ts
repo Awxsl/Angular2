@@ -6,14 +6,15 @@ import { CreateTicketComponent } from './components/create-ticket/create-ticket.
 import { TicketExpandedComponent } from './components/ticket-expanded/ticket-expanded.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AuthedUserGuard } from './guards/authed-user.guard';
 
 const routes: Routes = [
-  {path: 'dashboard', component: NavigationCardComponent},
+  {path: 'dashboard', component: NavigationCardComponent, canActivate: [AuthedUserGuard]},
   {path: 'login', component: LoginFormComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'tickets', component: TicketsComponent},
-  {path: 'tickets/:ticketid', component: TicketExpandedComponent},
-  {path: 'create-ticket', component: CreateTicketComponent},
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthedUserGuard]},
+  {path: 'tickets', component: TicketsComponent, canActivate: [AuthedUserGuard]},
+  {path: 'tickets/:ticketid', component: TicketExpandedComponent, canActivate: [AuthedUserGuard]},
+  {path: 'create-ticket', component: CreateTicketComponent, canActivate: [AuthedUserGuard]},
   {path: '**', redirectTo: 'login'},
 ];
 
