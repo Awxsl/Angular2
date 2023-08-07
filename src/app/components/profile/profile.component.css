@@ -1,0 +1,60 @@
+.profilePage {
+    width: 100%;
+}
+
+.profileCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.editButton {
+    color: rgb(66, 66, 255); 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.editButton:hover {
+    color: #000;
+}
+
+.inputField {
+    height: 2rem;
+    width: 80%;
+}
+
+input, textarea {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #000;
+}
+
+.maxWidth {
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .maxWidth {
+        width: 500px;
+    }
+}
+
+.formButtons {
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.formButton {
+    width: 100%;
+}

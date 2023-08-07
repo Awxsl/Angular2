@@ -1,1 +1,43 @@
-<p>profile works!</p>
+<div class="profilePage">
+  <app-card>
+    <ng-template [ngIf]="editMode" [ngIfElse]="Edit">
+        <div class="profileCardHeader">
+          <h3 class="username">Abdullah</h3>
+          <p class="editButton" (click)="onToggleEdit()">Edit</p>
+        </div>
+        <div class="profileCardBody">
+          <p class="description maxWidth">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam porro
+            consequatur excepturi reiciendis quae iusto neque! Eos omnis veniam fuga
+            tempora delectus animi quod? Incidunt est debitis quia quidem provident
+            magnam distinctio maxime, velit accusamus. Aperiam, necessitatibus
+            dolorem? Quis velit assumenda officia, saepe perspiciatis nam quidem ea
+            nostrum iste eligendi incidunt voluptates architecto. Odio soluta nam
+            quo doloremque a praesentium culpa neque, omnis vitae. Veritatis, animi
+            consequatur, ipsum quos debitis natus deserunt eaque delectus
+            necessitatibus cumque vero? Perferendis debitis nisi pariatur
+            consequatur voluptates eius mollitia ullam! Obcaecati ea numquam,
+            dolorem at fugiat provident? Molestias, quo? Et totam laborum vitae quo?
+          </p>
+        </div>
+    </ng-template>
+    
+    <ng-template #Edit>
+        <form class="profileForm">
+        <div class="profileCardHeader">
+          <input type="text" value="Abdullah" class="inputField">
+          <!-- <p class="editButton" (click)="onToggleEdit()">Edit</p> -->
+        </div>
+        <div class="profileCardBody">
+            <textarea rows="15" type="text" class="maxWidth">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum vitae dolorem in, nihil beatae dolor tempora minima doloremque nostrum dolore omnis numquam dignissimos adipisci molestias accusantium hic quas itaque vero natus obcaecati. Iusto saepe quibusdam maxime optio eaque eius, magnam autem quas, ullam doloribus voluptas blanditiis quae illum esse, voluptatem odio quisquam nisi sapiente. Pariatur ipsum inventore dolore modi porro amet maxime maiores, totam earum laborum reiciendis numquam, omnis voluptatem nisi illo laboriosam commodi recusandae. Nesciunt eaque accusantium ea deleniti illo enim vero labore, et sint cum praesentium nostrum corrupti assumenda possimus quia voluptatem consectetur corporis est sed eligendi aspernatur.
+            </textarea>
+          </div>
+          <div class="formButtons">
+              <app-button btnLabel="Submit" class="formButton"></app-button>
+              <app-button btnLabel="Cancel" class="formButton" (onButtonClick)="onToggleEdit()"></app-button>
+          </div>
+        </form>
+    </ng-template>
+  </app-card>
+</div>

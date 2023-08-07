@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  editMode = false
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onToggleEdit() {
+    this.editMode = !this.editMode
   }
 
 }
