@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-profile',
@@ -6,13 +7,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  editMode = false
-  constructor() { }
+  user!: any
+  updatedUser: any
+  editMode: boolean = false
+  constructor(private usersService:UsersService) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    const id: any = localStorage.getItem('username')
+    const response = await this.usersService.getUser(id)
+    if(response.status === 200) {
+      this.user = response.data
+      this.updatedUser = this.user
+    }
+  }
+
+  async onSubmit() {
+    // const response = await this.usersService.updateUser(this.updatedUser)
+    // if(response.status === 200) {
+    //   this.user = this.updatedUser
+    //   this.editMode = false
+    // } 
+    this.editMode = false
+  }
+
+  textAreaValueChange(event: any) {
+      this.updatedUser.description = event.target.value
   }
 
   onToggleEdit() {
+    this.updatedUser = this.user
     this.editMode = !this.editMode
   }
 
