@@ -22,12 +22,11 @@ export class ProfileComponent implements OnInit {
   }
 
   async onSubmit() {
-    // const response = await this.usersService.updateUser(this.updatedUser)
-    // if(response.status === 200) {
-    //   this.user = this.updatedUser
-    //   this.editMode = false
-    // } 
-    this.editMode = false
+    const response = await this.usersService.updateUser(this.updatedUser)
+    if(response.status === 200) {
+      this.user = this.updatedUser
+      this.editMode = false
+    } 
   }
 
   textAreaValueChange(event: any) {

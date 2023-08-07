@@ -14,7 +14,7 @@
     <ng-template #Edit>
         <form class="profileForm">
         <div class="profileCardHeader">
-          <input type="text" class="inputField" [(ngModel)]="updatedUser.id" [ngModelOptions]="{standalone: true}">
+          <input type="text" class="inputField" disabled [(ngModel)]="updatedUser.id" [ngModelOptions]="{standalone: true}">
         </div>
         <div class="profileCardBody">
             <textarea rows="15" type="text" class="maxWidth" (change)="textAreaValueChange($event)">{{updatedUser.description}}</textarea>

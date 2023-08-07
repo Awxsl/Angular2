@@ -29,14 +29,12 @@ export class UsersService {
     }
   }
 
-  // async updateUser(user:User) {
-  //   try {
-  //     const id = localStorage.getItem('username')
-  //     await this.http.put(`${this.apiUrl}/${id}`, user, headerOptions).toPromise()
-  //     localStorage.setItem('username', user.id)
-  //     return {status: 200}
-  //   } catch (error) {
-  //     return {status: 400, errorMessage: error}
-  //   }
-  // }
+  async updateUser(user:User) {
+    try {
+      await this.http.put(`${this.apiUrl}/${user.id}`, user, headerOptions).toPromise()
+      return {status: 200}
+    } catch (error) {
+      return {status: 400, errorMessage: error}
+    }
+  }
 }
